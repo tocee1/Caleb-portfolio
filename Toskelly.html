@@ -1,175 +1,101 @@
-Toskelly.<html>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Caleb's Website</title>
+    <title>Caleb's Portfolio</title>
     <style>
         body {
             background-color: white;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             padding: 20px; 
+            margin: 0;
         }
-        h1, h2 {
-            color: darkblue;
-            margin: 20px 0;
+        header {
+            background: darkblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
-        p {
-            line-height: 1.6;
+        nav {
+            background: darkgreen;
+            padding: 10px;
             margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background: yellow;
+            color: red;
         }
         img {
             border-radius: 50%;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
         }
         a {
-            color: white;
-            background-color: darkgreen;
-            padding: 10px;
-            text-decoration: none;
-            border-radius: 5px;
             display: inline-block;
+            margin: 10px;
         }
-        a:hover {
-            background-color: yellow;
-            color: red;
+        .social img {
+            width: 50px;
         }
-  
     </style>
 </head>
 <body>
-  <script>
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-</script>
-  <header>
-    <div class="container">
-        <h1>Engr. Caleb Tochukwu</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="#social">Social Media</a></li>
-            </ul>
-        </nav>
-    </div>
+
+<header>
+    <h1>Welcome to Caleb's Portfolio</h1>
 </header>
-    <p>This is my personal website, where I will be sharing my thoughts, ideas, experiences, and projects:</p>
-    <h1>About Me:</h1>
-    <img src="profile.jpg" alt="Caleb's Profile Picture" width="200px">
-    <p>I'm Engr. T C Atuh: <br> an Electrical/Automation and Control Engineer.</p>
-    <div class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Electrical Automation</li>
-            <li>Instrumentation</li>
-            <li>Control Engineering</li>
-            <li>Web Development (HTML, CSS, JavaScript)</li>
-        </ul>
-    </div>
 
-    <div class="section">
-        <h2>Experience</h2>
-        <p>I have experience working on electrical automation projects and control systems.</p>
-    </div>
-
-    <div class="section">
-        <h2>Projects</h2>
-
-  
-    <h2 id="contact">Contact Me</h2>
-<form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-    <button type="submit">Send Message</button>
-</form>
-<h2>About My Projects:</h2>
-    <h2>Check out my latest projects:</h2>
-
-    <!-- Link to my project -->
-    <a href="https://github.com/tocee1/Tovac.github.io.git" target="_blank">My GitHub Project</a>
-    <nav>
+<nav>
     <a href="#about">About Me</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact Me</a>
 </nav>
-<script>
-    const form = document.querySelector("form");
 
-    form.addEventListener("submit", function(e) {
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
+<section id="about">
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Caleb's Profile Picture" width="200px">
+    <p>I'm Engr. T C A, an Electrical/Automation and Control Engineer.</p>
+</section>
 
-        if (name === "" || email === "" || message === "") {
-            alert("Please fill in all fields!");
-            e.preventDefault(); // Stop form submission
-        } else {
-            alert("Thank you, " + name + "! Your message has been sent.");
-        }
-    });
-</script>
+<section id="projects">
+    <h2>Projects</h2>
+    <a href="https://github.com/tocee1/Caleb-portfolio" target="_blank">My GitHub Project</a>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:tochukwucaleb74@gmail.com">tochukwucaleb74@gmail.com</a></p>
+    <p>Phone: +2348060138233</p>
+</section>
+
 <h2>Follow Me on Social Media:</h2>
-<div>
+<div class="social">
     <a href="https://www.facebook.com/TochukwuCaleb" target="_blank">
-        <img src="facebook.png" alt="Facebook" width="50">
+        <img src="facebook.png" alt="Facebook">
     </a>
     <a href="https://wa.me/2348060138233" target="_blank">
-        <img src="wassap.png" alt="WhatsApp" width="50">
+        <img src="whatsapp.png" alt="WhatsApp">
     </a>
     <a href="https://www.linkedin.com/in/CalebTochukwu" target="_blank">
-        <img src="linkedin.png" alt="LinkedIn" width="50">
+        <img src="linkedin.png" alt="LinkedIn">
     </a>
     <a href="https://twitter.com/CalebTochukwu2" target="_blank">
-        <img src="twitter.png" alt="Twitter" width="50">
+        <img src="twitter.png" alt="Twitter">
     </a>
     <a href="https://t.me/Tochkwucaleb" target="_blank">
-        <img src="telegram.jpeg" alt="Telegram" width="50">
+        <img src="telegram.png" alt="Telegram">
     </a>
     <a href="https://www.instagram.com/ronica_empire" target="_blank">
-        <img src="instagram.png" alt="Instagram" width="50">
+        <img src="instagram.png" alt="Instagram">
     </a>
 </div>
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2025 Caleb Tochukwu (Toskelly). All Rights Reserved.</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/TochukwuCaleb" target="_blank">
-                <img src="facebook.png" alt="Facebook" width="30">
-            </a>
-            <a href="https://wa.me/2348060138233" target="_blank">
-                <img src="wassap.png" alt="WhatsApp" width="30">
-            </a>
-            <a href="https://www.linkedin.com/in/CalebTochukwu" target="_blank">
-                <img src="linkedin.png" alt="LinkedIn" width="30">
-            </a>
-            <a href="https://twitter.com/CalebTochukwu2" target="_blank">
-                <img src="twitter.png" alt="Twitter" width="30">
-            </a>
-            <a href="https://t.me/Tochkwucaleb" target="_blank">
-                <img src="telegram.jpeg" alt="Telegram" width="30">
-            </a>
-            <a href="https://www.instagram.com/ronica_empire" target="_blank">
-                <img src="instagram.png" alt="Instagram" width="30">
-            </a>
-        </div>
-    </div>
-</footer>
+
 </body>
 </html>
+   
