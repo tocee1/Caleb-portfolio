@@ -114,12 +114,51 @@
     <img src="profile.jpg" alt="Caleb's Profile Picture" width="200px">
     <p>I'm Engr. T C A, an Electrical/Automation and Control Engineer.</p>
 </section>
-
 <section id="projects">
     <h2>My Projects</h2>
-    <p>Check out my latest projects:</p>
-    <a href="https://github.com/tocee1/Caleb-portfolio" target="_blank">My GitHub Project</a>
+    <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A simple portfolio website built with HTML and CSS.</p>
+        <a href="https://github.com/tocee1/Caleb-portfolio" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+        <h3>Automation Control Panel</h3>
+        <p>Design and installation of industrial automation control panel.</p>
+        <a href="#" target="_blank">View Project</a>
+    </div>
 </section>
+
+<style>
+    .project-card {
+        border: 2px solid #003366;
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+
+    .project-card a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #003366;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .project-card a:hover {
+        background-color: yellow;
+        color: black;
+    }
+</style>
 
 <section id="contact">
     <h2>Contact Me</h2>
