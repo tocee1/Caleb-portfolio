@@ -191,25 +191,37 @@
 
 <section id="contact">
     <h2>Contact Me</h2>
-    <form>
+    <form action="https://formsubmit.co/tochukwucaleb74@gmail.com" method="POST">
+        
+        <!-- Prevent spam -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <!-- Redirect after submission (optional) -->
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+        <!-- Name -->
         <label for="name">Name:</label><br>
-        <input type="text" id="name" placeholder="Your Name"><br>
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
 
+        <!-- Email -->
         <label for="email">Email:</label><br>
-        <input type="email" id="email" placeholder="Your Email"><br>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
 
+        <!-- Message -->
         <label for="message">Message:</label><br>
-        <textarea id="message" placeholder="Your Message"></textarea><br>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
 
+        <!-- Submit Button -->
         <button type="submit">Send Message</button>
     </form>
 
+    <!-- Download CV button -->
     <a href="image/Caleb_CV.pdf" download="Caleb_CV.pdf" class="download-btn">Download CV</a>
 </section>
 
 <h2>Follow Me on Social Media:</h2>
 <div class="social-icons">
-    <a href="https://www.facebook.com/TochukwuCaleb" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+    <a href="https://www.facebook.com/TochuchuCaleb" target="_blank"><img src="facebook.png" alt="Facebook"></a>
     <a href="https://wa.me/2348060138233" target="_blank"><img src="wassapp.png" alt="WhatsApp"></a>
     <a href="https://www.linkedin.com/in/CalebTochukwu" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
     <a href="https://twitter.com/CalebTochukwu2" target="_blank"><img src="twitter.png" alt="Twitter"></a>
